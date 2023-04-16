@@ -7,7 +7,7 @@
 
 #include "Arduino.h"
 
-//Debug
+// Debug
 #define DebugBaudRate 9600
 
 void DebugInit()
@@ -31,13 +31,13 @@ void DebugError(const String Text)
     Serial.println("Error: " + Text);
 }
 
-//Display
+// Display
 #define DisplayAddress 0x3c
 #define DisplaySDA D2
 #define DisplaySCL D1
-SSD1306Wire *_display;      //Get an Instance of SSD1306
+SSD1306Wire *_display; // Get an Instance of SSD1306
 
-void DisplayInit()          //Initialize SSD1306Wire
+void DisplayInit() // Initialize SSD1306Wire
 {
     _display = new SSD1306Wire(DisplayAddress, DisplaySDA, DisplaySCL);
     _display->init();
@@ -46,7 +46,7 @@ void DisplayInit()          //Initialize SSD1306Wire
 void DisplayOn()
 {
     _display->displayOn();
-}     
+}
 void DisplayOff()
 {
     _display->displayOff();
@@ -67,7 +67,7 @@ void DisplayFlipVertically()
 {
     _display->flipScreenVertically();
 }
-void Display()             
+void Display()
 {
     _display->display();
 }
@@ -76,6 +76,10 @@ void DisplayClear()
     _display->clear();
 }
 //  Text
+void SetFont(const uint8_t* font)
+{
+    _display->setFont(font);
+}
 void DrawString(const String text)
 {
     _display->drawString(0, 0, text);
@@ -84,7 +88,7 @@ void DrawString(int16_t x, int16_t y, const String text)
 {
     _display->drawString(x, y, text);
 }
-void DrawStringf( int16_t x, int16_t y, char* buffer, String format, ... )
+void DrawStringf(int16_t x, int16_t y, char *buffer, String format, ...)
 {
     va_list myargs;
     va_start(myargs, format);
@@ -98,7 +102,7 @@ void DrawRect(int16_t x, int16_t y, int16_t width, int16_t height)
     _display->drawRect(x, y, width, height);
 }
 
-//Input
+// Input
 #define UPKEY D3
 #define DOWNKEY D5
 #define LEFTKEY D7
@@ -106,12 +110,12 @@ void DrawRect(int16_t x, int16_t y, int16_t width, int16_t height)
 #define XKEY D4
 #define YKEY D10
 
-EasyButton UpKey (UPKEY);
-EasyButton DownKey (DOWNKEY);
-EasyButton LeftKey (LEFTKEY);
-EasyButton RightKey (RIGHTKEY);
-EasyButton XKey (XKEY);
-EasyButton YKey (YKEY);
+EasyButton UpKey(UPKEY);
+EasyButton DownKey(DOWNKEY);
+EasyButton LeftKey(LEFTKEY);
+EasyButton RightKey(RIGHTKEY);
+EasyButton XKey(XKEY);
+EasyButton YKey(YKEY);
 
 void InputInit()
 {
@@ -133,7 +137,12 @@ void InputUpdate()
     YKey.update();
 }
 
-//Audio
+bool InputAnyKey()
+{
+    return UpKey.read() || DownKey.read() || LeftKey.read() || RightKey.read() || XKey.read() || YKey.read();
+}
+
+// Audio
 #define BuzzerPin D8
 
 void BuzzerInit()
