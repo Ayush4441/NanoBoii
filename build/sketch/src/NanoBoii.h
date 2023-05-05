@@ -1,3 +1,4 @@
+#line 1 "D:\\Projects\\Arduino Projects\\NanoBoii\\src\\NanoBoii.h"
 #ifndef NANOBOII_H
 #define NANOBOII_H
 

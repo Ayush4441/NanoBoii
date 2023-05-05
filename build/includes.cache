@@ -1,0 +1,72 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Saman\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.1.2\\cores\\esp8266"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Saman\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.1.2\\variants\\nodemcu"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\NanoBoii.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Saman\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.1.2\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\NanoBoii.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Audio\\EasyBuzzer\\EasyBuzzer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Display\\SSD1306_ESP\\OLEDDisplay.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Display\\SSD1306_ESP\\OLEDDisplayUi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Input\\EasyButton\\EasyButton.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Input\\EasyButton\\EasyButtonBase.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Input\\EasyButton\\EasyButtonTouch.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Input\\EasyButton\\EasyButtonVirtual.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Input\\EasyButton\\Sequence.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Projects\\Arduino Projects\\NanoBoii\\build\\sketch\\src\\lib\\Time\\Time.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Saman\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.1.2\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

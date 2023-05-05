@@ -1,7 +1,8 @@
-#include "src/NanoBoii.h"
-#include "src/Settings.h"
+# 1 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+# 2 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino" 2
+# 3 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino" 2
 
-#include "MenuButton.h"
+# 5 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino" 2
 
 char selectedbutton = 0;
 bool haspressed = false;
@@ -28,7 +29,7 @@ void IncrementSelect()
 
     selectedbutton++;
     BuzzerSingleBeep(1024, 10);
-    
+
     if (selectedbutton > 2)
         selectedbutton = 2;
 }

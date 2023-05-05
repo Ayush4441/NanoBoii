@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
 #include "src/NanoBoii.h"
 #include "src/Settings.h"
 
@@ -7,6 +9,19 @@ char selectedbutton = 0;
 bool haspressed = false;
 bool hasrelesed = true;
 
+#line 10 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void UpdateStatusMenu();
+#line 17 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void UpdateMenu();
+#line 24 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void IncrementSelect();
+#line 36 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void DecrementSelect();
+#line 48 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void setup();
+#line 72 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
+void loop();
+#line 10 "D:\\Projects\\Arduino Projects\\NanoBoii\\NanoBoii.ino"
 void UpdateStatusMenu()
 {
     DrawString(0, 0, GetUserName());
